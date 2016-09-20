@@ -1,0 +1,201 @@
+Last login: Tue Sep 20 08:29:07 on ttys001
+Nienna:~ barka$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Nienna:~ barka$ ls
+Applications		Knihovna Calibre	Music
+Desktop			Library			Pictures
+Documents		MightAndMagicXLegacy	Public
+Downloads		Movies			anaconda
+Nienna:~ barka$ cd Downloads
+Nienna:Downloads barka$ mkdir bla
+Nienna:Downloads barka$ cd bla
+Nienna:bla barka$ $ git init
+-bash: $: command not found
+Nienna:bla barka$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Nienna:bla barka$ $ git init
+-bash: $: command not found
+Nienna:bla barka$ git hel -a
+git: 'hel' is not a git command. See 'git --help'.
+
+Did you mean this?
+	help
+Nienna:bla barka$ git help -a
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+available git commands in '/usr/local/git/libexec/git-core'
+
+  add                       diff-index                merge-octopus             reset
+  add--interactive          diff-tree                 merge-one-file            rev-list
+  am                        difftool                  merge-ours                rev-parse
+  annotate                  difftool--helper          merge-recursive           revert
+  apply                     fast-export               merge-resolve             rm
+  archimport                fast-import               merge-subtree             send-email
+  archive                   fetch                     merge-tree                send-pack
+  bisect                    fetch-pack                mergetool                 sh-i18n--envsubst
+  bisect--helper            filter-branch             mktag                     shell
+  blame                     fmt-merge-msg             mktree                    shortlog
+  branch                    for-each-ref              mv                        show
+  bundle                    format-patch              name-rev                  show-branch
+  cat-file                  fsck                      notes                     show-index
+  check-attr                fsck-objects              p4                        show-ref
+  check-ignore              gc                        pack-objects              stage
+  check-mailmap             get-tar-commit-id         pack-redundant            stash
+  check-ref-format          grep                      pack-refs                 status
+  checkout                  gui                       patch-id                  stripspace
+  checkout-index            gui--askpass              prune                     submodule
+  cherry                    hash-object               prune-packed              submodule--helper
+  cherry-pick               help                      pull                      subtree
+  citool                    http-backend              push                      svn
+  clean                     http-fetch                quiltimport               symbolic-ref
+  clone                     http-push                 read-tree                 tag
+  column                    imap-send                 rebase                    unpack-file
+  commit                    index-pack                receive-pack              unpack-objects
+  commit-tree               init                      reflog                    update-index
+  config                    init-db                   relink                    update-ref
+  count-objects             instaweb                  remote                    update-server-info
+  credential                interpret-trailers        remote-ext                upload-archive
+  credential-cache          log                       remote-fd                 upload-pack
+  credential-cache--daemon  ls-files                  remote-ftp                var
+  credential-store          ls-remote                 remote-ftps               verify-commit
+  cvsexportcommit           ls-tree                   remote-http               verify-pack
+  cvsimport                 mailinfo                  remote-https              verify-tag
+  cvsserver                 mailsplit                 remote-testsvn            web--browse
+  daemon                    merge                     repack                    whatchanged
+  describe                  merge-base                replace                   worktree
+  diff                      merge-file                request-pull              write-tree
+  diff-files                merge-index               rerere
+
+git commands available from elsewhere on your $PATH
+
+  credential-osxkeychain
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+Nienna:bla barka$ git init
+Initialized empty Git repository in /Users/barka/Downloads/bla/.git/
+Nienna:bla barka$ ls
+Nienna:bla barka$ ls -a
+.	..	.git
+Nienna:bla barka$ nano zblept.txt
+
+  GNU nano 2.0.6                               File: zblept.txt                                                          Modified  
+
+Cold and dry, but everything is my favorite color 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help          ^O WriteOut          ^R Read File         ^Y Prev Page         ^K Cut Text          ^C Cur Pos
+^X Exit              ^J Justify           ^W Where Is          ^V Next Page         ^U UnCut Text        ^T To Spell
